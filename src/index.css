@@ -1,0 +1,179 @@
+body {
+    margin: 0
+}
+
+/* Main components */
+
+.topbar {
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 0 0 0 50px;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login and Register Forms */
+
+.loginForm {
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.3);
+    height: 25vh;
+    width: 15vw;
+    border-radius: 10px;
+    padding: 2% 5% 5% 5%;
+    
+}
+
+.loginForm input {
+    width: 100%;
+    margin: 0 0 2%;
+    display: block;
+    box-sizing: border-box;
+    height: 20%;
+    padding: 0 0 0 2%;
+}
+
+.loginForm input:focus::placeholder {
+    color: white;
+    transition: 0.5s;
+}
+
+::placeholder {
+    font-family: sans-serif;
+}
+
+.loginForm h1 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.loginForm p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Subcomponents */
+
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    min-width: 10vw;
+    /* justify-content: center; */
+    align-items: center;
+    border-right: 3px double gray;
+}
+
+.content {
+    padding: 0 0 0 5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    width: 90vw;
+    margin: 0 0 10vh 0;
+}
+
+/* Table Styles */
+
+.upArrow {
+    border: 7px solid white;
+    border-bottom: 7px solid brown;
+    border-left: 7px solid brown;
+    border-right: 7px solid brown;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    transform-origin: 50% 20% 0px;
+    transform: rotate(90deg);
+}
+
+th {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+tr:hover {
+    background-color: #c7c7c7;
+}
+
+td, th {
+    border: 1px solid brown;
+    padding: 1em 1.5em;
+}
+
+.table {
+    border: 2px solid brown;
+    border-radius: 1em;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+/* New Insurance Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 30vw;
+}
+
+.formDate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vh 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.input select {
+    width: 100%;
+}
+
+.input input {
+    width: 100%;
+}
+
+.date {
+    width:32%;
+}
+
+.label {
+    width: 50%;
+}
