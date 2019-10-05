@@ -189,6 +189,3 @@ ReactDOM.render(
         <App />
     </Provider>,
     document.getElementById('root'));
-
-
-    // Math.floor(Math.abs(new Date(action.payload.purchaseYear, action.payload.purchaseMonth + action.payload.warantyLength, action.payload.purchaseDay) - new Date())*0.00000000038)
