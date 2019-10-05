@@ -150,8 +150,8 @@ const newReg = (store) => (next) => (action) => {
             },
             body: JSON.stringify(action.payload)
         })
-        next(action);
     }
+	next(action);
 };
 
 const myLogger = (store) => (next) => (action) => {
